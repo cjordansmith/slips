@@ -1,0 +1,50 @@
+.review {padding-bottom: 5px;}
+.panel-body.review-container {padding-top: 0;}
+.review-header {margin-bottom: 10px;}
+.reviewAuthor {margin: 0 5px;}
+.reviewTimestamp {color: #ccc;}
+
+.panel-heading a {
+  color: #ffffff;
+}
+.panel-heading a:hover {
+  color: #ccc;
+}
+
+.navbar-header {
+  float: none;
+  width: auto;
+  display:block;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-header a {
+  text-align: center;
+  display: block;
+}
+.navbar-brand {
+  float: none;
+  margin-left: 0;
+  font-size: 26px;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+.navbar-default {
+  max-height: 50px;
+}
+
+#addItemForm > .form-group {
+  margin: 12px auto;
+}
+
+.page-header {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+small.small {
+  margin-left: 10px;
+}

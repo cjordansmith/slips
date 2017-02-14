@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Oxygen25
+        small &nbsp;&nbsp;&nbsp; $142.00 &nbsp;&nbsp;&nbsp; 03-24-2012
+  .row
+    .col-xs-12.col-md-8
+      .row
+        .col-xs-12
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Store info
+            .panel-body
+              p.storeName Guitar Center
+              p.address 6700 W 119th St
+              | Overland Park, KS 66209
+              | (913) 451-0700
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Tags
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; equipment
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; keyboard
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; mini
+              | &nbsp;
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.pull-right(href='receipt/item/new') Add item
+              h2.panel-title Receipt items
+            .panel-body.review-container
+              .row
+                .item
+                  .well.well-sm.item-header
+                    span.itemName M Audio Oxygen 25 v3
+                      span.pull-right.itemAmount $129.99
+                  .col-xs-12
+                    p.itemDesc 25-key keyboard controller
+              .row
+                .item
+                  .well.well-sm.item-header
+                    span.itemName Red Cross Donation
+                      span.pull-right.itemAmount $0.77
+                  .col-xs-12
+                    p.itemDesc Alabama Relief Fund
+              .row
+                .item
+                  .well.well-sm.item-header
+                    span.itemName Sales Tax
+                      span.pull-right.itemAmount $11.24
+                  .col-xs-12
+                    p.itemDesc Kansas sales tax @ 8.65%
+    .col-xs-12.col-md-4
+      .panel.panel-primary
+        .panel-heading
+          h2.panel-title Uploaded Receipt
+        .panel-body
+          img.img-responsive.img-rounded(src='/images/receipt1.png', alt='receipt image')

@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-6.col-lg-offset-3.col-sm-12.centered
+      h1 Add receipt item
+  .row
+    .col-lg-6.col-lg-offset-3.col-sm-12.centered
+      form.form-horizontal#addItemForm(action="/receipt", method="get", role="form")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="itemName") Item
+          .col-xs-12.col-sm-9
+            input#itemName.form-control(name="itemName")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="itemAmount") Price
+          .col-xs-12.col-sm-9
+            input#itemAmount.form-control(name="itemAmount")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="itemDesc") Description
+          .col-xs-12.col-sm-9
+            input#itemDesc.form-control(name="itemDesc")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="itemTags") Tags
+          .col-xs-12.col-sm-9
+            input#itemTags.form-control(name="itemTags")
+        br
+        button.btn.btn-success.centered Add item
+        br
+        br
